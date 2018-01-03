@@ -11,22 +11,24 @@ Ejemplo:   arr = [1, 2, 3, 4, 5, 6, 7]
 
 */
 
-var arr = [1, 2, 3, 4, 5, 6, 7];
+var arr = [1, 2, 3, 4, 5, 6, 7];//Arreglo con numeros a rotar
 
-var n= 3;
+var n= 3;//cantidad de veces a rotar
 
-for (var i = -9; i < arr.length; i++) {
-  var item = arr.pop(números);
-  arr.splice(i, 0, item);
+for ( i = -9; i < arr.length; i++) {//El ciclo for comienza desde la posición menos nueve  
+  var item = arr.pop(n);//pop elimina los tres ultimos elementos de el arr. 
+  arr.splice(i, 0, item);// splice  desde la posicion i , el cero nos dice que no se  eliminara elementos y luego item reordena insertando los 
+                         // tres elementos antes eliminados desde el comienzo.    
 }
 
-console.log(arr);
+console.log(arr);// [5, 6, 7, 1, 2, 3, 4]
 
 
 /**
 * EJERCICIO DIFICIL N°2
 Dado un arreglo de números positivos, retornar true si este se encuentra ordenado de menor a mayor,en caso contrario false. 
-No puede usar el método sort() de javascript.
+No puede usar el método sort() de
+javascript.
 
 */
 
@@ -37,13 +39,12 @@ No puede usar el método sort() de javascript.
   for ( var i = 0 ; i < arr.length ; i ++ ) { // ciclo for para  recorrer los numeros del arreglo
   var m= arr [ i ];//esta variable posiciona el primer numero de la variable arr
    var x= i - 1 ;// 
-    while ( x>= 0 && arr [ x] > m) 
-    { 
+    if( x>= 0 && arr [x] > m)//si la variable x es mayor o igual a cero  o si x es mayor a la variable m  esto nos dara 
+    {                        // si la operación es verdadera o falsa.
     arr [ x+1] = arr [ x]; x-- ; } 
-    arr [ x+ 1 ] = m } 
-    return arr ;
-     } 
-     console.log (ordenar(arr));// [1,5,7,9,90,100,300]
+    arr [ x+1 ] = m } 
+    return arr;
+     console.log (ordenar(arr));// [1,5,7,9,90,100,300] // es esta operación nos dio verdadera.
 
      
 

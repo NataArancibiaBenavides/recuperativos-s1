@@ -1,15 +1,16 @@
 /*
-Ejercicio Facil N°4
+Ejercicio Facil N°14
 **Dado un arreglo de 10 números, retornar un nuevo arreglo solo con los números pares.
 Ejemplo: input arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    output nuevoArr = [2, 4, 6, 8, 10]
 */
-var arr=[1,2,3,4,5,6,7,8,9,10];
-function par(valor){
-return valor %2 == 0;
+var arr=[1,2,3,4,5,6,7,8,9,10]; // array con numeros del 1 al 10
+function par(valor){// Funcion para sacar los numeros pares del array
+return valor %2 == 0;// el valor de cada numero de multiplica por 2 si el residuo es igual que cero  es numero par.
 }
-var arrPar=arr.filter(par);	
-console.log(arrPar);
+var arrPar=arr.filter(par);// con el metodo filter se crea una nueva matriz con todos los elementos que pasan la prueba
+                           // por la funcion implementada es decir la  funcion que determina que numero es par.	
+console.log(arrPar);// Resultado  devueleve solo los numeros pares del array .
 
 
 
@@ -21,13 +22,13 @@ Las notas van de 1 a 7 y se aprueba con un promedio igual o mayor a 4.*/
 
 
 
-var notas=(5+7+6+5+4+5+6+7+7+6);// Primero se suman los sumeros
+var notas=(5+7+6+5+4+5+6+7+7+6);// Primero se suman los numeros
 var promedio=notas/10;// luego se crea una variable para hacer la formula de las notas dividido por 10;
 console.log(promedio);
-if(promedio=>4){ // con el if se crea la opcion 
-alert('Aprueba');
-}else if (Promedio<4){
-alert('No Aprueba');}
+if(promedio=>4){ // con el if se crea la opcion  si el promedio es igual o mayor a 4 
+alert('Aprueba');// la alerta dara Aprueba 
+}else if (Promedio<4){//  si el promedio es menor a 4 
+alert('No Aprueba');}// la alerta dara No Aprueba.
 
 
 
